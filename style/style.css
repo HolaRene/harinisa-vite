@@ -6,8 +6,8 @@
 @import url("secciones/hero.css");
 @import url("secciones/about.css");
 @import url("secciones/popular.css");
-/*@import url("secciones/trending.css");
-@import url("secciones/subscribe.css");*/
+/*@import url("secciones/trending.css");*/
+@import url("secciones/subscribe.css");
 @import url("secciones/footer.css"); 
 
 /* CSS variables for reusablity across all files (including above imported) */
@@ -27,6 +27,7 @@
   --color-white: #fff;
   --color-verde: #2bb526;
   --color-azul: #2806bd;
+  --color-rojo:#be1414;
 
 }
 * {

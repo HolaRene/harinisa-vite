@@ -47,18 +47,31 @@
     cursor: pointer;
 }
 
-.footer__social li{
+.footer__social li {
     width: 42px;
     height: 42px;
 
     background-color: var(--color-azul);
-
     border-radius: 50%;
-}
 
-.footer__social li img{
-    width: 45%;
-    height: 45%;
+    /* Centrado perfecto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+}
+.footer__social li a img {
+    width: 60%;   /* Aumenta para que sea más visible */
+    height: 60%;  /* Usa porcentaje relativo al contenedor padre (el <li>) */
 
     object-fit: contain;
+
+    /* Asegura que la imagen no se deforme */
+    max-width: 100%;
+    max-height: 100%;
+
+    /* Opcional: efecto hover o filtro para ajustar color si es necesario */
+    filter: brightness(1);
 }

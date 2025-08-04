@@ -1,0 +1,76 @@
+.subscription{
+    padding: 64px;
+
+    background: var(--color-rojo);
+
+
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.subscription h2{
+    font-size: 88px;
+    line-height: 123px;
+    font-weight: 600;
+    font-family: var(--playfair-display);
+    
+    color: #fff;
+    text-align: center;
+}
+
+.contacto{
+    display: flex;
+}
+.contacto__img {
+    margin-top: 20px;
+    img{
+        border-radius: 50px;
+        width: 310px;
+        height: 400px;
+        object-fit: cover;
+
+        padding: 20px;
+    }
+}
+.contacto__descricion{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    p{
+        margin-top: 20px;
+
+        color: #fff;
+        font-size: 20px;
+    }
+    .contacto__descricion-btn{
+
+        display: flex;
+        flex-direction: column; 
+        /* flex-md-row  */
+        justify-content: center;
+        align-items: center;
+
+        a{
+            color: #fff;
+            font-family: monospace;
+        }
+
+        .correo-a{
+             background-color: var(--color-azul);
+
+             margin-top: 10px;
+             margin-bottom: 12px;
+             padding: 10px;
+
+             border-radius: 10px;
+        }
+        .whatsapp-a{
+             background-color: var(--color-verde);
+
+             margin-bottom: 2px;
+             padding: 10px;
+
+             border-radius: 10px;
+        }
+    }
+}
