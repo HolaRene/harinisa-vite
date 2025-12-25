@@ -1,76 +1,125 @@
-.subscription{
-    padding: 64px;
-
-    background: var(--color-rojo);
-
-
-    flex-direction: column;
-    overflow: hidden;
+.subscription {
+  padding: 64px;
+  background: var(--color-rojo);
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.subscription h2{
-    font-size: 88px;
-    line-height: 123px;
-    font-weight: 600;
-    font-family: var(--playfair-display);
-    
-    color: #fff;
-    text-align: center;
+.subscription h2 {
+  font-size: 88px;
+  line-height: 123px;
+  font-weight: 600;
+  font-family: var(--playfair-display);
+  color: #fff;
+  text-align: center;
 }
 
-.contacto{
-    display: flex;
+.contacto {
+  display: flex;
 }
+
 .contacto__img {
-    margin-top: 20px;
-    img{
-        border-radius: 50px;
-        width: 310px;
-        height: 400px;
-        object-fit: cover;
-
-        padding: 20px;
-    }
+  margin-top: 20px;
 }
-.contacto__descricion{
-    padding: 20px;
-    display: flex;
+
+.contacto__img img {
+  border-radius: 50px;
+  width: 310px;
+  height: 400px;
+  object-fit: cover;
+  padding: 20px;
+}
+
+.contacto__descricion {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto__descricion p {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.contacto__descricion-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto__descricion-btn a {
+  color: #fff;
+  font-family: monospace;
+}
+
+.correo-a {
+  background-color: var(--color-azul);
+  margin-top: 10px;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.whatsapp-a {
+  background-color: var(--color-verde);
+  margin-bottom: 2px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 850px) {
+  .subscription {
+    padding: 40px 20px;
+  }
+
+  .subscription h2 {
+    font-size: clamp(32px, 8vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .contacto {
     flex-direction: column;
-    p{
-        margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
 
-        color: #fff;
-        font-size: 20px;
-    }
-    .contacto__descricion-btn{
+  .contacto__img {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 
-        display: flex;
-        flex-direction: column; 
-        /* flex-md-row  */
-        justify-content: center;
-        align-items: center;
+  .contacto__img img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 30px;
+    padding: 10px;
+  }
 
-        a{
-            color: #fff;
-            font-family: monospace;
-        }
+  .contacto__descricion {
+    padding: 0;
+    align-items: center;
+  }
 
-        .correo-a{
-             background-color: var(--color-azul);
+  .contacto__descricion p {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
 
-             margin-top: 10px;
-             margin-bottom: 12px;
-             padding: 10px;
+  .contacto__descricion-btn {
+    width: 100%;
+    gap: 10px;
+  }
 
-             border-radius: 10px;
-        }
-        .whatsapp-a{
-             background-color: var(--color-verde);
-
-             margin-bottom: 2px;
-             padding: 10px;
-
-             border-radius: 10px;
-        }
-    }
+  .contacto__descricion-btn a {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 !important;
+  }
 }

@@ -1,34 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
 
 /* other css file imports */
-@import url("secciones/header.css");
-@import url("secciones/hero.css");
-@import url("secciones/about.css");
-@import url("secciones/popular.css");
+@import url('secciones/header.css');
+@import url('secciones/hero.css');
+@import url('secciones/about.css');
+@import url('secciones/popular.css');
 /*@import url("secciones/trending.css");*/
-@import url("secciones/subscribe.css");
-@import url("secciones/footer.css"); 
+@import url('secciones/subscribe.css');
+@import url('secciones/footer.css');
 
 /* CSS variables for reusablity across all files (including above imported) */
 :root {
-  --playfair-display: "Playfair Display", serif;
-  --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  --playfair-display: 'Playfair Display', serif;
+  --plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;
 
   --primary-naranja: #e49a05;
   --secondary-color: #121212;
-  
+
   --black-200: #020202;
   --black-300: #333333;
   --black-400: #1f1e31;
   --black-500: #555555;
   --gray-100: #888888;
-  
+
   --color-white: #fff;
   --color-verde: #2bb526;
   --color-azul: #2806bd;
-  --color-rojo:#be1414;
-
+  --color-rojo: #be1414;
 }
 * {
   margin: 0;
@@ -47,7 +46,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
 
 .flex-center {
   display: flex;
@@ -73,7 +71,7 @@ a {
 }
 
 .sushi__title {
-  font-size: 64px;
+  font-size: clamp(28px, 6vw, 64px);
   font-weight: 600;
   font-family: var(--playfair-display);
 
@@ -83,17 +81,17 @@ a {
 }
 
 .sushi__description {
-  font-size: 18px;
+  font-size: clamp(14px, 3.5vw, 18px);
   font-weight: 400;
   font-family: var(--plus-jakarta-sans);
 
-  line-height: 36px;
+  line-height: 1.5;
   letter-spacing: -0.01em;
 
   color: var(--secondary-color);
   opacity: 0.8;
 
-  margin: 32px 0px;
+  margin: 16px 0px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -164,7 +162,6 @@ a {
   }
 }
 /* END: about us media queries */
-
 
 /* START: header media querie */
 @media screen and (max-width: 900px) {
